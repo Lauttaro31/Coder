@@ -1,0 +1,319 @@
+* {
+    margin:0;
+    padding:0;
+    /* border: 1px solid red; */
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Lora:ital@1&family=Montserrat:ital@1&display=swap');
+
+                                        /** Inicio de Header **/
+
+ .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 10px;
+    height: 5rem;
+    width: 92%;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 1.5rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+    justify-content: space-between;
+    padding: 3px 3%;
+    position: sticky;
+    top: 10px;
+    z-index: 5;
+ }
+
+ .header .logo img{
+    align-items: center;
+    position: relative;
+    width: 4rem;
+    height: auto;
+ }
+ .header nav{
+    height: 4rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ nav .navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+    list-style-type: none;
+ }
+
+ .navLinks a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+
+ }
+
+ nav .icons{
+    height: auto;
+    width: 18%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1%;
+ }
+
+ .icons img{
+    height: 2rem;
+    width: auto;
+ }
+
+ nav .busqueda{
+    width: 20rem;
+    height: 1.5rem;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    margin: 10px;
+    justify-content: space-around;
+ }
+
+ .busqueda a{
+    display: flex;
+    align-items: center;
+ }
+
+ .busqueda img{
+    height: 1rem;
+    width: auto;
+    align-items: center;
+    margin: auto;
+ }
+
+ .busqueda .buscar{
+    height: auto;
+    width: 15rem;
+    background: none;
+    border: none;
+ }
+
+                                           /** Fin de Header **/
+
+                                           /** Inicio de Main **/
+
+  .main{
+    background-image: linear-gradient(rgb(20, 20, 20), white, rgb(20, 20, 20));
+    position: relative;
+    background-color: none;
+    align-items: center;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.30);
+    height: auto;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .info h2{
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+    font-size: 35px;
+    padding: 1rem;
+  }
+
+  .productos{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .productos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    font-family: "Hind Madurai", sans-serif;
+  }
+
+  .productos div img{
+    width: 100px;
+    height: auto;
+  }
+
+  .articulos h2{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(34, 34, 34, 0.50);
+    border-radius: 2rem;
+    color: white;
+    font-size: xx-large;
+    font-weight: 600;
+    letter-spacing: 2px;
+    justify-content: center;
+    margin: 1rem 30rem;
+    padding: 10px;
+  }
+  
+  .articulos .divArt{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 0;
+  }
+
+  .divArt div{
+    align-items: center;
+    background-color: rgba(165, 165, 165, 0.315);
+    border-radius: 30px;
+    height: 25rem;
+    width: auto;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+  }
+
+  .divArt div img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 18rem;
+    width: auto;
+    border-radius: 50px;
+    margin: auto;
+  }
+
+  .divArt div h3{
+    font-family: 'Hind Madurai', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .divArt div p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 1rem;
+  }
+
+                                              /** Fin de Main **/
+
+                                            /** Inicio de Footer **/
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 1rem;
+  }
+
+  .pago-envio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .pago-envio .pago{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 30px;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+  }
+
+  .pago h4{
+    display: flex;
+    margin: 5px 0 10px 0;
+    justify-content: center;
+    font-family: "Hind Madurai", sans-serif;;
+    color: white;
+  }
+
+  .pago img{
+    height: 2rem;
+    width: auto;
+  }
+
+  .pago-envio .envio{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 30px;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+  }
+
+  .envio h4{
+    display: flex;
+    margin: 5px 0 10px 0;
+    justify-content: center;
+    font-family: "Hind Madurai", sans-serif;;
+    color: white;
+  }
+
+  .envio img{
+    height: 2rem;
+    width: auto;
+  }
+
+  .politica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .politica ul{
+    display: flex;
+    list-style-type: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    justify-content: space-evenly;
+    margin: 1rem;
+  }
+
+  .politica li{
+    margin: 1rem;
+  }
+
+  .formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    border-radius: 3rem;
+    margin: 1rem;
+  }
+  
+  .formulario div{
+    background-color: rgb(rgb(20, 20, 20));
+    border-radius: 2rem;
+    height: auto;
+  }
+
+  .formulario h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .formulario form{
+    
+  }
+
+  
+
+
+
+
+
+
+
+
