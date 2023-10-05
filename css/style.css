@@ -20,8 +20,8 @@
     flex-direction: row;
     align-items: center;
     height: 5rem;
-    width: 96vw;
-    margin: 0 1rem 0 1rem;
+    width: 100%;
+    /* margin: 0 1rem 0 1rem; */
     background-color: rgba(0, 0, 0, 0.925);
     border-radius: 0 1.5rem;
     box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
@@ -32,13 +32,9 @@
     z-index: 5;
  }
 
- .carrito{
-  height: 30px;
-  margin: 0 5px;
- }
-
  .carrito img{
   height: 30px;
+  margin: 0 1rem;
  }
 
  .carrito img:hover{
@@ -48,6 +44,7 @@
  .logo{
     width: auto;
     height: auto;
+    margin-left: 4rem;
  }
 
  .header .logo img{
@@ -57,11 +54,12 @@
  }
 
  .header nav{
-    height: 4rem;
-    width: 85%;
+    height: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 2rem;
  }
  
  nav .navLinks{
@@ -105,7 +103,7 @@
  }
 
  nav .busqueda{
-    width: 20rem;
+    width: 14rem;
     height: 1.5rem;
     background-color: rgb(34, 34, 34);
     display: flex;
@@ -129,11 +127,35 @@
 
  .busqueda .buscar{
     height: auto;
-    width: 15rem;
+    width: 7rem;
     background: none;
     border: none;
  }
 
+ .carrito{
+    height: 30px;
+    width: auto;
+    margin-right: 4rem;
+ }
+
+ .checkbtn{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    display: none;
+    margin-right: 2rem;
+    font-size: 30px;
+    color: white;
+ }
+
+ .menu{
+    height: 25px;
+    margin-bottom: 8px;
+ }
+
+ #check{
+    display: none;
+ }
   /** Fin de Header **/
 
   /** Inicio de Main **/
@@ -150,7 +172,7 @@
 
   .carousel-caption{
     left: 50%;
-    top: 35%;
+    top: 30%;
   }
 
   .d-md-block h3{
@@ -306,89 +328,6 @@
 
   /**Fin de Productos**/
 
-  /** Inicio de Footer **/
-
-  footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1rem 1rem;
-  }
-
-  .pago-envio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .pago-envio .pago{
-    margin: 1rem;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.842);
-    border-radius: 0 1rem;
-    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
-  }
-
-  .pago h4{
-    display: flex;
-    margin: 5px 0 10px 0;
-    justify-content: center;
-    font-family: "Hind Madurai", sans-serif;
-    font-size: large;
-    color: white;
-  }
-
-  .pago img{
-    height: 2rem;
-    width: auto;
-  }
-
-  .pago-envio .envio{
-    margin: 1rem;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.842);
-    border-radius: 0 1rem;
-    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
-  }
-
-  .envio h4{
-    display: flex;
-    margin: 5px 0 10px 0;
-    justify-content: center;
-    font-family: "Hind Madurai", sans-serif;;
-    font-size: large;
-    color: white;
-  }
-
-  .envio img{
-    height: 2rem;
-    width: auto;
-    border-radius: 3px;
-  }
-
-  .politica{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .politica ul{
-    display: flex;
-    list-style-type: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    justify-content: space-evenly;
-    margin: 1rem;
-  }
-
-  .politica li{
-    margin: 1rem;
-  }
-
-  .politica .text{
-    text-decoration: none;
-  }
-
   /**Inicio de Contacto **/
 
   .formulario{
@@ -410,10 +349,12 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: white;
+    margin: 1rem;
   }
 
   .formulario p{
     color: white;
+    margin: 1rem;
   }
 
   .form-control{
@@ -450,7 +391,7 @@
 
   .info h2{
     font-weight: 700;
-    margin: 15px;
+    margin: 1rem
   }
   
   .productos{
@@ -466,12 +407,16 @@
     width: auto;
     height: 300px;
     margin-left: 15px;
+    border-radius: 0 2rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
   }
 
   .art-2 img{
     width: auto;
     height: 300px;
     margin-left: 15px;
+    border-radius: 0 2rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
   }
   .art-2 p{
     margin-left: 15px;
@@ -482,6 +427,8 @@
     width: auto;
     height: 300px;
     margin-left: 15px;
+    border-radius: 0 2rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
   }
   .art-3 p{
     margin-left: 15px;
@@ -519,6 +466,143 @@
     text-decoration: none;
     font-weight: bold;
   }
+
+    /** Inicio de Footer **/
+
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 1rem 1rem;
+    }
+  
+    .pago-envio{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .pago-envio .pago{
+      margin: 1rem;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.842);
+      border-radius: 0 1rem;
+      box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+    }
+  
+    .pago h4{
+      display: flex;
+      margin: 5px 0 10px 0;
+      justify-content: center;
+      font-family: "Hind Madurai", sans-serif;
+      font-size: large;
+      color: white;
+    }
+  
+    .pago img{
+      height: 2rem;
+      width: auto;
+    }
+  
+    .pago-envio .envio{
+      margin: 1rem;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.842);
+      border-radius: 0 1rem;
+      box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+    }
+  
+    .envio h4{
+      display: flex;
+      margin: 5px 0 10px 0;
+      justify-content: center;
+      font-family: "Hind Madurai", sans-serif;;
+      font-size: large;
+      color: white;
+    }
+  
+    .envio img{
+      height: 2rem;
+      width: auto;
+      border-radius: 3px;
+    }
+  
+    .politica{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .politica ul{
+      display: flex;
+      list-style-type: none;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      justify-content: space-evenly;
+      margin: 1rem;
+    }
+  
+    .politica li{
+      margin: 1rem;
+    }
+  
+    .politica .text{
+      text-decoration: none;
+    }
+
+    
+   /* Media Queris */
+
+   @media (max-width: 1140px){
+    .header{
+      justify-content: start;
+      align-items: center;
+      padding: 14px;
+      height: 5rem;
+    }
+    .logo{
+      margin-left: 1rem;
+    }
+    .checkbtn{
+      display: block;
+      justify-content: end;
+    }
+    .header nav{
+      flex-direction: column;
+    }
+    nav .navLinks{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      margin: 1rem 0;
+      flex-direction: column;
+      align-items: center;
+      font-size: xx-large;
+      background-color: rgba(0, 0, 0, 0.712);
+      top: 74px;
+      clip-path: circle(150% at top);
+      transition: all 0.5s;
+      z-index: 1;
+    }
+    .nav .navLinks:target{
+      clip-path: circle(150% at top);
+    }
+    .formulario{
+      flex-direction: column;
+    }
+    .btn{
+      margin-bottom: 1rem;
+    }
+  }
+  @media (max-width: 630px){
+    .header .busqueda{
+      display: none;
+    }
+  }
+
+
+
+
 
 
 
