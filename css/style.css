@@ -5,35 +5,60 @@
  }
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Lora:ital@1&family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-                                        /** Inicio de Header **/
+  body{
+    background-color: #cacaca;
+    height: 100%;
+    width: 100%;
+  }
+
+ /** Inicio de Header **/
 
  .header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 10px;
     height: 5rem;
-    width: 92%;
-    background-color: rgba(0, 0, 0, 0.842);
-    border-radius: 1.5rem;
+    width: 96vw;
+    margin: 0 1rem 0 1rem;
+    background-color: rgba(0, 0, 0, 0.925);
+    border-radius: 0 1.5rem;
     box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
-    justify-content: space-between;
-    padding: 3px 3%;
+    padding: 0 20px;
+    justify-content: space-evenly;
     position: sticky;
     top: 10px;
     z-index: 5;
  }
 
+ .carrito{
+  height: 30px;
+  margin: 0 5px;
+ }
+
+ .carrito img{
+  height: 30px;
+ }
+
+ .carrito img:hover{
+  scale: 1.05;
+ }
+
+ .logo{
+    width: auto;
+    height: auto;
+ }
+
  .header .logo img{
     align-items: center;
     position: relative;
-    width: 4rem;
-    height: auto;
+    width: 9rem;
  }
+
  .header nav{
     height: 4rem;
-    width: 90%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,19 +67,29 @@
  nav .navLinks{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: self-start;
+    justify-content: space-around;
     list-style-type: none;
+    margin: 0 5px;
  }
 
  .navLinks a{
+    position: relative;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
     text-decoration: none;
-    color: white;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
     margin: 0 1rem;
-
  }
+
+ .navLinks li:hover{
+    scale: 1.08;
+ }
+
+ .navLinks a:hover{
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+    transition: 0.2s;
+}
 
  nav .icons{
     height: auto;
@@ -99,124 +134,185 @@
     border: none;
  }
 
-                                           /** Fin de Header **/
+  /** Fin de Header **/
 
-                                           /** Inicio de Main **/
+  /** Inicio de Main **/
 
   .main{
-    background-image: linear-gradient(rgb(20, 20, 20), white, rgb(20, 20, 20));
-    position: relative;
-    background-color: none;
-    align-items: center;
-    border-radius: 1.5rem;
-    box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.30);
-    height: auto;
-    width: 100%;
-    z-index: 1;
+    margin: 2rem;
   }
 
-  .info h2{
-    display: flex;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
+  .carousel{
+    background-color: black;
+    border-radius: 0 2rem;
+    box-shadow: 0 2px 2px 0 rgb(75, 75, 75);
+  }
+
+  .carousel-caption{
+    left: 50%;
+    top: 35%;
+  }
+
+  .d-md-block h3{
+    color: #F4F3F0;
     font-weight: 700;
-    margin-top: 1rem;
-    font-size: 35px;
-    padding: 1rem;
   }
 
-  .productos{
+  .d-md-block p{
+    color: #F4F3F0;
+    margin: none;
+    font-weight: 400;
+  }
+
+  .btn-main{
+    border-radius: 5px 0;
+  }
+
+  .active{
+    color: white;
+  }
+
+  .d-img{
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    margin: 0 20%;
+    padding: auto;
+    border-radius: 0 1rem;
+    height: 25rem;
   }
 
-  .productos div{
+  .d-img:hover{
+    scale: 1.05;
+  }
+
+  .info-cont{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    font-family: "Hind Madurai", sans-serif;
+    background-color: white;
+    padding: 1rem;
+    margin: 3rem 0 1rem 0;
+    border-radius: 0 2rem;
+    box-shadow: 0 2px 2px 0 rgb(75, 75, 75);
   }
 
-  .productos div img{
-    width: 100px;
-    height: auto;
+  .info{
+    display: flex;
+    justify-content: center;
+  }
+  .info h1{
+    margin: 1rem 1rem;
+    font-weight: 700;
+  }
+
+  .info-2{
+    margin-bottom: 2rem;
+  }
+
+  .info-2 h2{
+    display: inline-block;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .info-2 p{
+    font-weight: 400;
+  }
+
+  .btn:hover{
+    scale: 1.05;
+  }
+
+  /** Fin de Main **/
+
+  /**Inicio de Productos**/
+
+  .articulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .articulos h2{
     display: flex;
-    font-family: "Montserrat", sans-serif;
-    background-color: rgba(34, 34, 34, 0.50);
-    border-radius: 2rem;
+    justify-content: center;
+    margin: 2rem;
+    background-color: black;
     color: white;
-    font-size: xx-large;
-    font-weight: 600;
-    letter-spacing: 2px;
-    justify-content: center;
-    margin: 1rem 30rem;
-    padding: 10px;
-  }
-  
-  .articulos .divArt{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    z-index: 0;
-  }
-
-  .divArt div{
-    align-items: center;
-    background-color: rgba(165, 165, 165, 0.315);
-    border-radius: 30px;
-    height: 25rem;
-    width: auto;
-    margin: 1rem;
-    padding: 1rem;
-    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
-  }
-
-  .divArt div img{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 18rem;
-    width: auto;
-    border-radius: 50px;
-    margin: auto;
-  }
-
-  .divArt div h3{
-    font-family: 'Hind Madurai', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding-top: 30px;
-  }
-
-  .divArt div p{
+    border-radius: 0 1rem;
+    padding: 0.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 2px 0 rgb(75, 75, 75);
+  }
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .card{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    padding-top: 1rem;
+    width: 18rem;
+    background-color: white;
+    border-radius: 0 1rem;
+    box-shadow: 0 2px 2px 0 rgb(75, 75, 75);
   }
 
-                                              /** Fin de Main **/
+  .card img:hover{  /**Este hover es para poder ampliar la img en futuro**/
+    scale: 1.02;
+  }
 
-                                            /** Inicio de Footer **/
+  .card a{
+    display: flex;
+    justify-content: center;
+    width: 12rem;
+    margin: 10px;
+  }
+
+  .card a:hover{
+    scale: 1.03;
+  }
+
+  .card img{
+    width: 12rem;
+    margin: 20px 0 0 0;
+    border-radius: 0 1rem;
+  }
+
+  .card-body{
+    margin: 8px;
+    padding: 0;
+  }
+
+  .card-title{
+    color: black;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .card-text{
+    color: black;
+    text-align: center;
+    font-size: large;
+    margin: 8px;
+  }
+
+
+
+  /**Fin de Productos**/
+
+  /** Inicio de Footer **/
 
   footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5px 1rem;
+    margin: 1rem 1rem;
   }
 
   .pago-envio{
@@ -229,7 +325,7 @@
     margin: 1rem;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.842);
-    border-radius: 30px;
+    border-radius: 0 1rem;
     box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
   }
 
@@ -237,7 +333,8 @@
     display: flex;
     margin: 5px 0 10px 0;
     justify-content: center;
-    font-family: "Hind Madurai", sans-serif;;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: large;
     color: white;
   }
 
@@ -250,7 +347,7 @@
     margin: 1rem;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.842);
-    border-radius: 30px;
+    border-radius: 0 1rem;
     box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
   }
 
@@ -259,12 +356,14 @@
     margin: 5px 0 10px 0;
     justify-content: center;
     font-family: "Hind Madurai", sans-serif;;
+    font-size: large;
     color: white;
   }
 
   .envio img{
     height: 2rem;
     width: auto;
+    border-radius: 3px;
   }
 
   .politica{
@@ -277,6 +376,7 @@
     display: flex;
     list-style-type: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
     justify-content: space-evenly;
     margin: 1rem;
   }
@@ -285,13 +385,19 @@
     margin: 1rem;
   }
 
+  .politica .text{
+    text-decoration: none;
+  }
+
+  /**Inicio de Contacto **/
+
   .formulario{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: gray;
-    border-radius: 3rem;
-    margin: 1rem;
+    background-color: black;
+    border-radius: 0rem 2rem;
+    margin: 2rem 1rem;
   }
   
   .formulario div{
@@ -302,13 +408,117 @@
 
   .formulario h2{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: white;
   }
 
-  .formulario form{
-    
+  .formulario p{
+    color: white;
   }
 
+  .form-control{
+    margin: 0 0 5px;
+  }
+
+  .mb-3 textarea{
+    height: 85px;
+  }
+
+  .form-label{
+    font-weight: 500;
+    margin: 3px 0 3px 0;
+    color: white;
+  }
+
+  .btn{
+    margin-right: 1rem;
+  }
+
+  /**Fin de Contacto **/
+
+  /**Inicio de Sublimados **/
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0 2rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+  }
+
+  .info h2{
+    font-weight: 700;
+    margin: 15px;
+  }
   
+  .productos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .art-1 p{
+    margin-left: 15px;
+    color: black;
+  }
+  .art-1 img{
+    width: auto;
+    height: 300px;
+    margin-left: 15px;
+  }
+
+  .art-2 img{
+    width: auto;
+    height: 300px;
+    margin-left: 15px;
+  }
+  .art-2 p{
+    margin-left: 15px;
+    color: black;
+  }
+
+  .art-3 img{
+    width: auto;
+    height: 300px;
+    margin-left: 15px;
+  }
+  .art-3 p{
+    margin-left: 15px;
+    color: black;
+  }
+
+  .imgs-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+  }
+
+    /**Fin de Sublimados **/
+
+    /**Inicio de Envios **/
+
+  .div-1 img{
+    height: 2rem;
+  }
+
+  .info h2{
+    background-color: white;
+    border-radius: 0 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30)
+  }
+
+  .productos{
+    margin: 15px 0 0 15px;
+  }
+
+  .div-2 a{
+    text-decoration: none;
+    font-weight: bold;
+  }
 
 
 

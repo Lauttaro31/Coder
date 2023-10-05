@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laufey | The Best T-Shirt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="./assets/icons/laufey.png">
 </head>
@@ -14,7 +15,7 @@
 
             <div class="logo">
 
-                <a href="#"><img src="./assets/icons/logo.ico" alt="logo"></a>
+                <a href="#"><img src="./assets/icons/laufey-2.png" alt="logo"></a>
                 
             </div>
 
@@ -33,81 +34,76 @@
                     <a href="#"><img src="./assets/icons/lupa.png" alt="busqueda"></a>
                 </div>
 
-                <div class="icons">
-                    <a href="https://www.youtube.com/@CoderHouse"><img src="./assets/icons/youtube.ico" alt="youtube"></a>
-                    <a href="https://www.facebook.com/Coderhouse"><img src="./assets/icons/facebook.ico" alt="facebook"></a>
-                    <a href="https://www.instagram.com/coderhouse/"><img src="./assets/icons/instagram.ico" alt="instagram"></a>
+                <div class="carrito">
+                    <a href="#"><img src="./assets/icons/carrito.png" alt="carrito"></a>
                 </div>
-
+                
             </nav>
             
     </header>
 
     <main class="main">
 
-        <section class="articulos">
-            
-            <h2>DESTACADO</h2>
+        <!-- Quiero cambiar las flechas de los botones de Next y Previous a blanco pero no puedo -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide"> 
 
-            <div class="divArt">
-
-                <div>
-                    <img src="assets/tshirt/espalda-ilusion.png" alt="ILUSION">
-                    <h3>REMERA OVERSIZE "ILUSION"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-stop.png" alt="STOP">
-                    <h3>REMERA OVERSIZE "STOP"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-street.png" alt="STREET">
-                    <h3>REMERA OVERSIZE "STREET"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-ilusion.png" alt="ILUSION">
-                    <h3>REMERA OVERSIZE "ILUSION"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-stop.png" alt="STOP">
-                    <h3>REMERA OVERSIZE "STOP"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-street.png" alt="STREET">
-                    <h3>REMERA OVERSIZE "STREET"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-ilusion.png" alt="ILUSION">
-                    <h3>REMERA OVERSIZE "ILUSION"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-stop.png" alt="STOP">
-                    <h3>REMERA OVERSIZE "STOP"</h3>
-                    <p>$5.580</p>
-                </div>
-
-                <div>
-                    <img src="assets/tshirt/espalda-street.png" alt="STREET">
-                    <h3>REMERA OVERSIZE "STREET"</h3>
-                    <p>$5.580</p>
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/tshirt/espalda-ilusion.png" class="d-block w-25 d-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h3>Remera Overzise "ILUSION"</h3>
+                    <p>Meterial poliester, calidad PREMIUM.</p>
+                    <a href="../pages/productos.html"><button type="button" class="btn btn-light btn-main">Ver más</button></a> 
                 </div>
 
             </div>
 
-        </section>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/pants/pant-4.png" class="d-block w-25 d-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Pantalon Cargo "BLANCO"</h3>
+                  <p>Meterial jean, calidad PREMIUM.</p>
+                  <a href="../pages/productos.html"><button type="button" class="btn btn-light btn-main">Ver más</button></a>
+                </div>
+            </div>
+
+              <div class="carousel-item">
+                <img src="./assets/campera/camp-2.png" class="d-block w-25 d-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Campera "BLANCO Y"</h3>
+                  <p>Meterial Paño y Corderito, calidad PREMIUM.</p>
+                  <a href="../pages/productos.html"><button type="button" class="btn btn-light btn-main">Ver más</button></a>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <div class="info-cont">
+
+            <div class="info">
+                <h1>Laufey And K</h1>
+            </div>
+    
+            <div class="info-2">
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos un grupo de personas apasionadas por la innovación de diseños, la indumentaria y la sublimación sobre la misma.</p>
+                <h2>¿A qué nos dedicamos?</h2>
+                <p>Principalmente nos dedicamos a la sublimación en remeras, poco a poco con el crecimiento y las ventas vamos ampliando nustros horizontes para nuevos ingresos de materiales para sublimar; tazas, gorras, vasos, entre otras cosas..</p>
+            </div>
+
+        </div>
 
     </main>
 
@@ -141,13 +137,15 @@
         <div class="politica">
 
             <ul>
-                <li><a href="#">Política de privacidad</a></li>
-                <li>Copyright LaufeyAndK - 2023. Todos los derechos reservados.</li>
+                <li><a href="#" class="text">Política de privacidad</a></li>
+                <li>@ Copyright LaufeyAndK - 2023. Todos los derechos reservados.</li>
             </ul>
 
         </div>
 
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 
