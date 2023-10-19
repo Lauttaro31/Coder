@@ -1,14 +1,19 @@
 @import "base";
-.info{
+.informacion{
     h2{
         @include shadow-border;
         background-color: black;
         color: white;
-        margin: 1rem;
+        margin: 2rem;
         padding: 2rem;
     }
-    .productos{
-        margin: 15px 0 0 15px;
+    .product{
+        @include shadow-border;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        background-color: white;
+        padding: 2rem;
     }
     .div-1{
         img{

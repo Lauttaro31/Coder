@@ -86,3 +86,19 @@
         }
     }
 }
+@media (max-width: 576px){
+    .info{
+        .productos{
+            margin: 0;
+            .subproducto{
+                .imgs-1{
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    img{
+                    height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
