@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    /* border: 1px solid red; */
+ }
+body{
+    background-color: #cacaca;
+    height: 100%;
+    width: 100%;
+}
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin shadow-border{
+    border-radius: 0 2rem;
+    box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+}

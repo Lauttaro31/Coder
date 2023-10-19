@@ -1,0 +1,60 @@
+.formulario{
+    @include shadow-border;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    margin: 2rem 2rem;
+    padding: 2rem;
+    p{
+        color: white;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    div{
+        background-color: black;
+        border-radius: 2rem;
+        height: auto;
+        align-items: center;
+    }
+    h2{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 70px;
+        color: white;
+        margin: 1rem 0 0 0;
+    }
+    .telefono{
+        width: 50px;
+        margin: 0 20px 8px;
+    }
+    .form{
+        display: flex;
+        flex-direction: row;
+        gap: 0 3rem;
+        .form-control{
+            margin: 0 0 5px;
+        }
+        .mb-3 textarea{
+            height: 85px;
+        }
+        .form-label{
+            font-weight: 500;
+            margin: 3px 0 3px 0;
+            color: white;
+            width: 20rem;
+        }
+        .btn{
+            margin: 1rem;
+        }
+    }  
+}
+@media (max-width: 1080px){
+    .formulario{
+        .form{
+            flex-direction: column;
+        }
+    }
+
+}

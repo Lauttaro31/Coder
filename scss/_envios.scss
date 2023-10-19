@@ -1,0 +1,25 @@
+@import "base";
+.info{
+    h2{
+        @include shadow-border;
+        background-color: black;
+        color: white;
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .productos{
+        margin: 15px 0 0 15px;
+    }
+    .div-1{
+        img{
+            height: 2rem;
+        }
+    }
+    .div-2{
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+    }
+}

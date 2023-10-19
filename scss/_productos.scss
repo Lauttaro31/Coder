@@ -1,0 +1,84 @@
+@import "base";
+.articulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        @include shadow-border;
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 0.5rem;
+        font-family: sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 17rem;
+        background-color: white;
+        @include shadow-border;
+        a{
+            display: flex;
+            justify-content: center;
+            width: 12rem;
+            margin: 10px;
+        }
+        img{
+            width: 12rem;
+            margin: 20px 0 0 0;
+            border-radius: 0 1rem;
+        }
+        .card-body{
+            margin: 8px;
+            padding: 0;
+        }
+        .card-title{
+            color: black;
+            text-align: center;
+            font-size: x-large;
+        }
+        .card-text{
+            color: black;
+            text-align: center;
+            font-size: large;
+            margin: 8px;
+        }
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+@media (max-width: 992px){
+    .articulos{
+        .card{
+            width: 12rem;
+            img{
+                width: 10rem;
+                margin: 20px 0 0 0;
+                border-radius: 0 1rem;
+            }
+            .card-title{
+                color: black;
+                text-align: center;
+                font-size: large;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                width: 10rem;
+                margin: 10px;
+            }
+        }
+        .cards{
+            gap: 1rem;
+        }
+    }
+}
