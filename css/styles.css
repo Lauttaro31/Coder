@@ -147,7 +147,7 @@ body {
     align-items: center;
     padding: 14px;
     height: 5rem;
-    border-radius: 0;
+    border-radius: 2rem 2rem 0 0;
   }
   .header .logo {
     margin-left: 2rem;
@@ -164,18 +164,19 @@ body {
     background-color: rgba(0, 0, 0, 0.733);
     backdrop-filter: blur(10px);
     width: 100vw;
-    height: 55vh;
+    height: 70vh;
     left: -5px;
-    padding: 5px;
+    padding: 30px;
     transform: translatey(-120%);
+    border-radius: 0 0 3rem 3rem;
   }
   .header nav .main-menu li {
     margin: 1rem;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.2rem;
   }
   .header nav .main-menu li a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .header nav .main-menu--show {
     transform: translatey(0);
@@ -390,6 +391,12 @@ footer .politica .text {
   color: black;
 }
 
+@media (max-width: 552px) {
+  footer .pago-envio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -464,10 +471,10 @@ body {
 
 @media (max-width: 992px) {
   .articulos .card {
-    width: 12rem;
+    width: 10rem;
   }
   .articulos .card img {
-    width: 10rem;
+    width: 8rem;
     margin: 20px 0 0 0;
     border-radius: 0 1rem;
   }
@@ -479,11 +486,11 @@ body {
   .articulos .card a {
     display: flex;
     justify-content: center;
-    width: 10rem;
+    width: 8rem;
     margin: 10px;
   }
   .articulos .cards {
-    gap: 1rem;
+    gap: 0.6rem;
   }
 }
 * {
@@ -657,7 +664,7 @@ body {
   font-weight: 500;
   margin: 3px 0 3px 0;
   color: white;
-  width: 20rem;
+  width: 16rem;
 }
 .formulario .form .btn {
   margin: 1rem;

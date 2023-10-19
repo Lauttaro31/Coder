@@ -118,7 +118,7 @@
         align-items: center;
         padding: 14px;
         height: 5rem;
-        border-radius: 0;
+        border-radius: 2rem 2rem 0 0;
         .logo{
             margin-left: 2rem;
         }  
@@ -133,16 +133,17 @@
                 background-color: rgba(0, 0, 0, 0.733);
                 backdrop-filter: blur(10px);
                 width: 100vw;
-                height: 55vh;
+                height: 70vh;
                 left: -5px;
-                padding: 5px;
+                padding: 30px;
                 transform: translatey(-120%);
+                border-radius: 0 0 3rem 3rem;
                 li{
                     margin: 1rem;
                     justify-content: center;
-                    padding: 1rem;
+                    padding: 1.2rem;
                     a{
-                        font-size: 1.4rem;
+                        font-size: 1.3rem;
                     }
                 }
             }
@@ -164,7 +165,7 @@
         justify-content: start;
         align-items: center;
         padding: 14px;
-         height: 5rem;
+        height: 5rem;
         .logo{
             margin-left: 2rem;
         }  
@@ -373,5 +374,13 @@ footer{
             text-decoration: none;
             color: black;
         }    
+    }
+}
+@media (max-width: 552px){
+    footer{
+        .pago-envio{
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
