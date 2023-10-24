@@ -1,4 +1,11 @@
 @import "base";
+.title-2{
+    @include shadow-border;
+    @include titulo;
+    display: flex;
+    justify-content: center;
+
+}
 .info{
     @include shadow-border;
     display: flex;
@@ -7,12 +14,15 @@
     background-color: white;
     padding: 1rem;
     h2{
-        font-weight: 700;
-        margin: 1rem
+        @include shadow-border;
+        @include titulo;
+        display: flex;
+        justify-content: center;
     }
     .productos{
         display: flex;
         flex-direction: column;
+        padding-top: 1rem;
         .subproducto{
             .imgs-1{
                 @include flex-row-center;
@@ -21,7 +31,10 @@
         }
         .art-1{
             p{
-            margin-left: 15px;
+            margin: 0 2rem;
+            @include parrafos;
+            font-size: 18px;
+            letter-spacing: 1px;
             color: black;
             }
             img{
@@ -39,7 +52,10 @@
                 margin-left: 15px;
             }
             p{
-                margin-left: 15px;
+                @include parrafos;
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin: 0 2rem;
                 color: black;
             }
         }
@@ -51,7 +67,10 @@
                 margin-left: 15px;
             }
             p{
-                margin-left: 15px;
+                @include parrafos;
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin: 0 2rem;
                 color: black;
             }
         }

@@ -1,4 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +40,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   height: 5rem;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.925);
@@ -42,11 +53,12 @@ body {
   margin-right: 4rem;
 }
 .header .carrito img {
-  height: 30px;
   width: 30px;
 }
 .header .carrito img:hover {
   scale: 1.05;
+  transform: translatey(-2px);
+  transition: transform 0.3s;
 }
 .header .menu {
   height: 25px;
@@ -118,16 +130,18 @@ body {
 .header nav .main-menu a:hover {
   color: rgb(139, 139, 139);
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .header nav .main-menu li:hover {
-  scale: 1.08;
+  scale: 1.05;
+  transform: translatey(-2px);
+  transition: transform 0.3s;
 }
 .header nav .main-menu a {
   position: relative;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
   text-decoration: none;
-  font-weight: 600;
   color: rgb(255, 255, 255);
   margin: 0 1rem;
 }
@@ -207,7 +221,7 @@ body {
   }
 }
 .main {
-  margin: 2rem;
+  margin: calc(1rem + 10px);
 }
 .main .carousel {
   background-color: black;
@@ -217,6 +231,10 @@ body {
 }
 .main .carousel .btn-main {
   border-radius: 5px 0;
+}
+.main .carousel .btn-main:hover {
+  filter: invert(1);
+  transition: filter 0.5s;
 }
 .main .carousel .active {
   color: white;
@@ -230,10 +248,13 @@ body {
   height: 25rem;
 }
 .main .carousel .d-md-block h3 {
+  font-family: "Montserrat", sans-serif;
   color: #F4F3F0;
   font-weight: 700;
 }
 .main .carousel .d-md-block p {
+  font-family: "Reboto", sans-serif;
+  font-size: 18px;
   color: #F4F3F0;
   margin: none;
   font-weight: 400;
@@ -244,10 +265,12 @@ body {
   top: 30%;
 }
 .main .carousel .carousel-caption .d-md-block h3 {
+  font-family: "Montserrat", sans-serif;
   color: #F4F3F0;
   font-weight: 700;
 }
 .main .carousel .carousel-caption .d-md-block p {
+  font-family: "Reboto", sans-serif;
   color: #F4F3F0;
   margin: none;
   font-weight: 400;
@@ -259,8 +282,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  padding: 1rem;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 0 0;
   border-radius: 0 2rem;
   box-shadow: 0 2px 2px 0 rgb(75, 75, 75);
 }
@@ -271,20 +293,28 @@ body {
   border-radius: 0 2rem;
 }
 .main .info-cont .info h1 {
-  margin: 1rem 1rem;
-  font-weight: 700;
-  color: white;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 0;
 }
 .main .info-cont .info-2 {
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem 1rem;
 }
 .main .info-cont .info-2 h2 {
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
   margin: 1rem;
   font-size: 2rem;
 }
 .main .info-cont .info-2 p {
+  font-family: "Reboto", sans-serif;
   font-weight: 400;
+  font-size: 18px;
+  margin-left: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -322,79 +352,147 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem 1rem;
+  margin: 1rem 0;
 }
-footer .pago-envio {
+footer .pago-envio-links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-footer .pago-envio .pago {
+footer .pago-envio-links .pago {
+  height: 6rem;
   margin: 1rem;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.842);
   border-radius: 0 1rem;
   box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
 }
-footer .pago-envio .pago h4 {
+footer .pago-envio-links .pago h4 {
   display: flex;
   margin: 5px 0 10px 0;
   justify-content: center;
-  font-family: "Hind Madurai", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
   font-size: large;
   font-weight: 600;
   color: white;
 }
-footer .pago-envio .pago img {
+footer .pago-envio-links .pago img {
   height: 2rem;
   width: auto;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 0 10px 0 10px;
 }
-footer .pago-envio .envio {
+footer .pago-envio-links .envio {
+  height: 6rem;
   margin: 1rem;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.842);
   border-radius: 0 1rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
 }
-footer .pago-envio .envio h4 {
+footer .pago-envio-links .envio h4 {
   display: flex;
   margin: 5px 0 10px 0;
   justify-content: center;
-  font-family: "Hind Madurai", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
   font-size: large;
   font-weight: 600;
   color: white;
 }
-footer .pago-envio .envio img {
+footer .pago-envio-links .envio img {
   height: 2rem;
   width: auto;
-  border-radius: 3px;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 0 10px 0 10px;
 }
-footer .politica {
+footer .pago-envio-links .links-poli {
+  padding: 1rem;
+  width: 40%;
+}
+footer .pago-envio-links .links-poli .links {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+footer .pago-envio-links .links-poli .links h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+footer .pago-envio-links .links-poli .links .links-redes {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  width: auto;
+  height: auto;
 }
-footer .politica ul {
+footer .pago-envio-links .links-poli .links .links-redes a {
+  margin: 0 0.8rem;
+  width: auto;
+}
+footer .pago-envio-links .links-poli .links .links-redes a img {
+  width: 30px;
+  filter: invert(0.8);
+}
+footer .pago-envio-links .links-poli .links .links-redes a img:hover {
+  scale: 1.05;
+  transform: translatey(-2px);
+  transition: transform 0.3s;
+}
+footer .pago-envio-links .links-poli .poli ul {
   display: flex;
   list-style-type: none;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   justify-content: space-evenly;
-  margin: 1rem;
+  margin: 1rem 0;
+  padding: 0;
 }
-footer .politica li {
-  margin: 1rem;
-}
-footer .politica .text {
+footer .pago-envio-links .links-poli .poli .text {
   text-decoration: none;
   color: black;
 }
+footer .pago-envio-links .links-poli .poli a {
+  width: 30px;
+}
+footer .pago-envio-links .links-poli .poli a img {
+  width: 100%;
+}
 
-@media (max-width: 552px) {
-  footer .pago-envio {
+@media (max-width: 1100px) {
+  footer .pago-envio-links {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 552px) {
+  footer .pago-envio-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .pago-envio-links .pago img {
+    height: 1.8rem;
+  }
+  footer .pago-envio-links .envio img {
+    height: 1.8rem;
+  }
+  footer .pago-envio-links .links-poli {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer .pago-envio-links .links-poli .links {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .pago-envio-links .links-poli .links h3 {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  footer .pago-envio-links .links-poli .poli ul li {
+    margin: 0 1rem;
   }
 }
 * {
@@ -416,51 +514,16 @@ body {
 }
 .articulos h2 {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+  margin: calc(1rem + 10px);
   background-color: black;
   color: rgb(255, 255, 255);
   padding: 0.5rem;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  letter-spacing: 1px;
-}
-.articulos .card {
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 17rem;
-  background-color: white;
-  border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
-}
-.articulos .card a {
-  display: flex;
-  justify-content: center;
-  width: 12rem;
-  margin: 10px;
-}
-.articulos .card img {
-  width: 12rem;
-  margin: 20px 0 0 0;
-  border-radius: 0 1rem;
-}
-.articulos .card .card-body {
-  margin: 8px;
-  padding: 0;
-}
-.articulos .card .card-title {
-  color: black;
-  text-align: center;
-  font-size: x-large;
-}
-.articulos .card .card-text {
-  color: black;
-  text-align: center;
-  font-size: large;
-  margin: 8px;
 }
 .articulos .cards {
   display: flex;
@@ -468,29 +531,107 @@ body {
   justify-content: center;
   gap: 2rem;
 }
+.articulos .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  width: 17rem;
+  background-color: white;
+  border-radius: 0 2rem;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+}
+.articulos .cards .card .card-img-top {
+  width: 100%;
+  border-radius: 0 3rem 0 3rem;
+  padding: 0 1rem 0 1rem;
+}
+.articulos .cards .card .card-body {
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+.articulos .cards .card .card-body .card-title {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: x-large;
+}
+.articulos .cards .card .card-body .card-text {
+  color: black;
+  text-align: center;
+  font-family: "Reboto", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  margin: 6px 0 6px 0;
+}
+.articulos .cards .card .compra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.articulos .cards .card .compra a {
+  display: flex;
+  justify-content: center;
+  width: 12rem;
+  margin: 5px 10px;
+}
+.articulos .cards .card .compra .btn {
+  border-radius: 0 10px 0 10px;
+  margin: 0 5px;
+}
+.articulos .cards .card .compra .btn:hover {
+  filter: invert(1);
+  transition: filter 0.5s;
+}
+.articulos .cards .card .compra .carro {
+  width: 38px;
+  height: 38px;
+  background-color: #212529;
+  padding: 5px;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 0 5px;
+}
+.articulos .cards .card .compra .carro:hover {
+  filter: invert(1);
+  transition: filter 0.5s;
+}
+.articulos .cards .card .compra .carro .carro-img {
+  width: 100%;
+}
 
 @media (max-width: 992px) {
-  .articulos .card {
+  .articulos .cards {
+    gap: 0.7rem;
+  }
+  .articulos .cards .card {
     width: 10rem;
   }
-  .articulos .card img {
-    width: 8rem;
-    margin: 20px 0 0 0;
-    border-radius: 0 1rem;
+  .articulos .cards .card .card-img-top img {
+    width: 9rem;
+    margin: 0;
+    border-radius: 0;
   }
-  .articulos .card .card-title {
+  .articulos .cards .card .card-body .card-title {
     color: black;
     text-align: center;
-    font-size: large;
+    font-size: medium;
   }
-  .articulos .card a {
+  .articulos .cards .card a {
     display: flex;
     justify-content: center;
     width: 8rem;
     margin: 10px;
   }
-  .articulos .cards {
-    gap: 0.6rem;
+  .articulos .cards .card .compra {
+    width: 90%;
+  }
+  .articulos .cards .card .compra .carro {
+    width: 56px;
   }
 }
 * {
@@ -505,9 +646,23 @@ body {
   width: 100%;
 }
 
+.title-2 {
+  border-radius: 0 2rem;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+  margin: calc(1rem + 10px);
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+
 .info {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   display: flex;
   flex-direction: column;
   margin: 2rem 2rem;
@@ -515,12 +670,22 @@ body {
   padding: 1rem;
 }
 .info h2 {
-  font-weight: 700;
-  margin: 1rem;
+  border-radius: 0 2rem;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+  margin: calc(1rem + 10px);
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
 }
 .info .productos {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 }
 .info .productos .subproducto .imgs-1 {
   display: flex;
@@ -530,36 +695,45 @@ body {
   margin: 1rem 0 1rem 0;
 }
 .info .productos .art-1 p {
-  margin-left: 15px;
+  margin: 0 2rem;
+  font-family: "Reboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
   color: black;
 }
 .info .productos .art-1 img {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   width: auto;
   height: 300px;
   margin-left: 15px;
 }
 .info .productos .art-2 img {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   width: auto;
   height: 300px;
   margin-left: 15px;
 }
 .info .productos .art-2 p {
-  margin-left: 15px;
+  font-family: "Reboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0 2rem;
   color: black;
 }
 .info .productos .art-3 img {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   width: auto;
   height: 300px;
   margin-left: 15px;
 }
 .info .productos .art-3 p {
-  margin-left: 15px;
+  font-family: "Reboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0 2rem;
   color: black;
 }
 
@@ -610,33 +784,90 @@ body {
 
 .informacion h2 {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+  margin: calc(1rem + 10px);
   background-color: black;
-  color: white;
-  margin: 2rem;
-  padding: 2rem;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
 }
 .informacion .product {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   display: flex;
   flex-direction: column;
   margin: 2rem;
   background-color: white;
   padding: 2rem;
+  gap: 1rem;
+}
+.informacion .div-1 {
+  height: 5rem;
+}
+.informacion .div-1 h3 {
+  font-family: "Montserrat", sans-serif;
+}
+.informacion .div-1 p {
+  font-family: "Reboto", sans-serif;
+  margin: 0;
 }
 .informacion .div-1 img {
   height: 2rem;
+  border-radius: 0 10px 0 10px;
+  margin: 0 5px 5px 5px;
+}
+.informacion .div-2 {
+  height: 5rem;
+}
+.informacion .div-2 h3 {
+  font-family: "Montserrat", sans-serif;
+}
+.informacion .div-2 p {
+  font-family: "Reboto", sans-serif;
+  margin: 0;
 }
 .informacion .div-2 a {
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
+.informacion .div-3 {
+  height: 5rem;
+}
+.informacion .div-3 h3 {
+  font-family: "Montserrat", sans-serif;
+}
+.informacion .div-3 p {
+  font-family: "Reboto", sans-serif;
+  margin: 0;
+}
+.informacion .ilustracion {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.informacion .ilustracion .product-img {
+  width: 5%;
+  margin: 0 1rem;
+}
 
+@media (max-width: 656px) {
+  .informacion .ilustracion {
+    flex-wrap: wrap;
+  }
+  .informacion .ilustracion .product-img {
+    width: 15%;
+  }
+}
 .formulario {
   border-radius: 0 2rem;
-  box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -646,6 +877,7 @@ body {
   padding: 2rem;
 }
 .formulario p {
+  font-family: "Reboto", sans-serif;
   color: white;
   font-size: 30px;
   font-weight: 400;
@@ -657,7 +889,7 @@ body {
   align-items: center;
 }
 .formulario h2 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 70px;
   color: white;
@@ -674,11 +906,14 @@ body {
 }
 .formulario .form .form-control {
   margin: 0 0 5px;
+  font-family: "Reboto", sans-serif;
 }
 .formulario .form .mb-3 textarea {
   height: 85px;
+  font-family: "Reboto", sans-serif;
 }
 .formulario .form .form-label {
+  font-family: "Reboto", sans-serif;
   font-weight: 500;
   margin: 3px 0 3px 0;
   color: white;
@@ -687,10 +922,128 @@ body {
 .formulario .form .btn {
   margin: 1rem;
 }
+.formulario .form .btn:hover {
+  filter: invert(1);
+  transition: filter 0.5s;
+}
 
 @media (max-width: 1080px) {
   .formulario .form {
     flex-direction: column;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #cacaca;
+  height: 100%;
+  width: 100%;
+}
+
+main .h2 {
+  border-radius: 0 2rem;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+  margin: calc(1rem + 10px);
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+main .ind {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main .ind .ind-img {
+  height: 70vh;
+}
+main .ind .ind-img img {
+  height: 100%;
+  border-radius: 0 2rem;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+}
+main .ind .ind-texto {
+  border-radius: 0 2rem;
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 2rem;
+}
+main .ind .ind-texto h3 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  margin-bottom: 1rem;
+}
+main .ind .ind-texto p {
+  font-family: "Reboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: white;
+}
+main .ind .ind-texto .btns {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main .ind .ind-texto .btns .btn {
+  border-radius: 0 5px 0 5px;
+  font-family: "Reboto", sans-serif;
+  letter-spacing: 1px;
+}
+main .ind .ind-texto .btns .btn:hover {
+  filter: invert(1);
+  transition: filter 0.5s;
+}
+main .ind .ind-texto .btns select {
+  background-color: #212529;
+  color: white;
+  border-radius: 0 5px 0 5px;
+  width: 2.5rem;
+}
+main .ind .ind-texto .btns h4 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  font-size: 300;
+  color: white;
+  margin: 6px 0 0 0;
+}
+main .ind .ind-texto .btns .carro {
+  width: 38px;
+  background-color: #212529;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 0 5px;
+}
+main .ind .ind-texto .btns .carro:hover {
+  filter: invert(1);
+  transition: filter 0.5s;
+}
+main .ind .ind-texto .btns .carro img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  main .ind {
+    flex-direction: column;
+  }
+  main .ind .ind-img img {
+    height: 50%;
   }
 }
 

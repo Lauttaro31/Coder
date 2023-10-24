@@ -12,10 +12,9 @@
     .carrito{
         margin-right: 4rem;
         img{
-            height: 30px;
             width: 30px;
             &:hover{
-                scale: 1.05;
+                @include animacion;
             }
         }  
     }
@@ -66,6 +65,7 @@
                 display: flex;
                 align-items: center;
             }
+            
         }
         .icons{
             height: auto;
@@ -87,16 +87,16 @@
             a:hover{
                 color: rgb(139, 139, 139);
                 text-decoration: none;
-                transition: 0.2s;
+                transition: 0.3s;
             }
             li:hover{
-                scale: 1.08;
+                @include animacion;
             }
             a{
                 position: relative;
-                font-family: sans-serif;
+                @include encabezado;
+                letter-spacing: 1px;
                 text-decoration: none;
-                font-weight: 600;
                 color: rgb(255, 255, 255);
                 margin: 0 1rem;
             }
@@ -180,7 +180,7 @@
     }
 }
 .main{
-    margin: 2rem;
+    margin: calc(1rem + 10px);
     .carousel{
         background-color: black;
         border-radius: 0 2rem;
@@ -188,6 +188,9 @@
         z-index: 0;
         .btn-main{
             border-radius: 5px 0;
+            &:hover{
+                @include animacion-invert;
+            }
         }
         .active{
             color: white;
@@ -201,11 +204,14 @@
             height: 25rem;
         }
         .d-md-block h3{
+            @include encabezado;
             color: #F4F3F0;
             font-weight: 700;
             
         }
         .d-md-block p{
+            @include parrafos;
+            font-size: 18px;
             color: #F4F3F0;
             margin: none;
             font-weight: 400;
@@ -215,10 +221,12 @@
             left: 50%;
             top: 30%;
             .d-md-block h3{
+                @include encabezado;
                 color: #F4F3F0;
                 font-weight: 700;
             }
             .d-md-block p{
+                @include parrafos;
                 color: #F4F3F0;
                 margin: none;
                 font-weight: 400;
@@ -232,8 +240,7 @@
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 1rem;
-        margin: 3rem 0 1rem 0;
+        margin: 3rem 0 0 0;
         border-radius: 0 2rem;
         box-shadow: 0 2px 2px 0 rgb(75, 75, 75);
         .info{
@@ -242,20 +249,28 @@
             background-color: black;
             border-radius: 0 2rem;
             h1{
-                margin: 1rem 1rem;
-                font-weight: 700;
-                color: white;
+                background-color: black;
+                color: rgb(255, 255, 255);
+                @include encabezado;
+                font-weight: 600;
+                text-align: center;
+                letter-spacing: 2px;
+                margin-bottom: 0;
             }
         }
         .info-2{
-            margin-bottom: 2rem;
+            margin: 0 2rem 2rem 1rem;
             h2{
+                @include encabezado;
                 display: inline-block;
                 margin: 1rem;
                 font-size: 2rem;
             }
             p{
+                @include parrafos;
                 font-weight: 400;
+                font-size: 18px;
+                margin-left: 1rem;
             }
         }
     }
@@ -308,12 +323,13 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem 1rem;
-    .pago-envio{
+    margin: 1rem 0;
+    .pago-envio-links{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         .pago{
+            height: 6rem;
             margin: 1rem;
             padding: 1rem;
             background-color: rgba(0, 0, 0, 0.842);
@@ -323,7 +339,8 @@ footer{
                 display: flex;
                 margin: 5px 0 10px 0;
                 justify-content: center;
-                font-family: "Hind Madurai", sans-serif;
+                @include encabezado;
+                letter-spacing: 1px;
                 font-size: large;
                 font-weight: 600;
                 color: white;
@@ -331,19 +348,23 @@ footer{
             img{
                 height: 2rem;
                 width: auto;
+                border: 1px solid rgb(77, 77, 77);
+                border-radius: 0 10px 0 10px;
             }
         }
         .envio{
+            height: 6rem;
             margin: 1rem;
             padding: 1rem;
             background-color: rgba(0, 0, 0, 0.842);
             border-radius: 0 1rem;
-            box-shadow: 0 3px 3px 0 rgba(50, 50, 50, 0.30);
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
             h4{
                 display: flex;
                 margin: 5px 0 10px 0;
                 justify-content: center;
-                font-family: "Hind Madurai", sans-serif;;
+                @include encabezado;
+                letter-spacing: 1px;
                 font-size: large;
                 font-weight: 600;
                 color: white;
@@ -351,36 +372,108 @@ footer{
             img{
                 height: 2rem;
                 width: auto;
-                border-radius: 3px;
+                border: 1px solid rgb(77, 77, 77);
+                border-radius: 0 10px 0 10px;
             }  
         }
+        .links-poli{
+            padding: 1rem;
+            width: 40%;
+            .links{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                h3{
+                    @include encabezado;
+                    margin-right: 2rem;
+                    margin-bottom: 0;
+                }
+                .links-redes{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: auto;
+                    height: auto;
+                    a{
+                        margin: 0 0.8rem;
+                        width: auto;
+                        img{
+                            width: 30px;
+                            filter: invert(.8);
+                            &:hover{
+                                @include animacion;
+                            }
+                        }
+                    }
+                }
+            }
+            .poli{
+                ul{
+                display: flex;
+                list-style-type: none;
+                @include encabezado;
+                font-weight: 600;
+                justify-content: space-evenly;
+                margin: 1rem 0;
+                padding: 0;
+                }
+                .text{
+                    text-decoration: none;
+                    color: black;
+                } 
+                a{
+                    width: 30px;
+                    img{
+                        width: 100%;                        
+                    }
+                }
+            }
+        }
     }
-    .politica{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        ul{
-            display: flex;
-            list-style-type: none;
-            font-family: sans-serif;
-            font-weight: 600;
-            justify-content: space-evenly;
-            margin: 1rem;
+}
+@media (max-width: 1100px){
+    footer{
+        .pago-envio-links{
+            flex-direction: column;
+            align-items: center;
         }
-        li{
-            margin: 1rem;
-        }
-        .text{
-            text-decoration: none;
-            color: black;
-        }    
     }
 }
 @media (max-width: 552px){
     footer{
-        .pago-envio{
+        .pago-envio-links{
             flex-direction: column;
             align-items: center;
+            .pago{
+                img{
+                    height: 1.8rem;
+                }
+            }
+            .envio{
+                img{
+                    height: 1.8rem;
+                }
+            }
+            .links-poli{
+                width: 100%;
+                flex-direction: column;
+                .links{
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    h3{
+                        margin-right: 0;
+                        margin-bottom: 5px;
+                    }
+                }
+                .poli{
+                    ul{
+                        li{
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

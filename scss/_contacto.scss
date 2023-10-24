@@ -8,6 +8,7 @@
     margin: 2rem 2rem;
     padding: 2rem;
     p{
+        @include parrafos;
         color: white;
         font-size: 30px;
         font-weight: 400;
@@ -19,7 +20,7 @@
         align-items: center;
     }
     h2{
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        @include encabezado;
         font-weight: 700;
         font-size: 70px;
         color: white;
@@ -35,11 +36,14 @@
         gap: 0 3rem;
         .form-control{
             margin: 0 0 5px;
+            @include parrafos;
         }
         .mb-3 textarea{
             height: 85px;
+            @include parrafos;
         }
         .form-label{
+            @include parrafos;
             font-weight: 500;
             margin: 3px 0 3px 0;
             color: white;
@@ -47,6 +51,9 @@
         }
         .btn{
             margin: 1rem;
+            &:hover{
+                @include animacion-invert;
+            }
         }
     }  
 }

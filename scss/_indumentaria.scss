@@ -1,0 +1,99 @@
+@import "base";
+
+main{
+    .h2{
+        @include shadow-border;
+        @include titulo;
+        display: flex;
+        justify-content: center;
+    }
+    .ind{
+        margin: 0 1rem 0 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        .ind-img{
+            height: 70vh;
+            img{
+                height: 100%;
+                @include shadow-border;
+            }
+        }
+        .ind-texto{
+            @include shadow-border;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            padding: 2rem;
+            h3{
+                @include encabezado;
+                letter-spacing: 3px;
+                color: white;
+                margin-bottom: 1rem;
+            }
+            p{
+                @include parrafos;
+                font-weight: 300;
+                letter-spacing: 1.5px;
+                text-align: center;
+                color: white;
+        
+            }
+            .btns{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                .btn{
+                    border-radius: 0 5px 0 5px;
+                    @include parrafos;
+                    letter-spacing: 1px;
+                    &:hover{
+                        @include animacion-invert;
+                    }
+                }
+                select{
+                    background-color: #212529;
+                    color: white;
+                    border-radius: 0 5px 0 5px;
+                    width: 2.5rem;
+                }
+                h4{
+                    @include encabezado;
+                    letter-spacing: 2px;
+                    font-size: 300;
+                    color: white;
+                    margin: 6px 0 0 0;
+                }
+                .carro{
+                    width: 38px;
+                    background-color: #212529;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0 5px 0 5px;
+                    &:hover{
+                        @include animacion-invert;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    main{
+        .ind{
+            flex-direction: column;
+            .ind-img{
+                img{
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
