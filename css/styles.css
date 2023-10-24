@@ -873,8 +873,7 @@ body {
   align-items: center;
   justify-content: space-around;
   background-color: black;
-  margin: 2rem 2rem;
-  padding: 2rem;
+  margin: calc(1rem + 10px);
 }
 .formulario p {
   font-family: "Reboto", sans-serif;
