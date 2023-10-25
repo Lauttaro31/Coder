@@ -15,7 +15,6 @@
         gap: 1rem
     }
     .div-1{
-        height: 5rem;
         h3{
             @include encabezado;
         }
@@ -30,7 +29,6 @@
         }
     }
     .div-2{
-        height: 5rem;
         h3{
             @include encabezado;
         }
@@ -45,7 +43,6 @@
         }
     }
     .div-3{
-        height: 5rem;
         h3{
             @include encabezado;
         }

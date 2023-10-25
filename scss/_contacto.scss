@@ -6,6 +6,9 @@
     justify-content: space-around;
     background-color: black;
     margin: calc(1rem + 10px);
+    .titulo{
+        padding: 0 2rem;
+    }
     p{
         @include parrafos;
         color: white;

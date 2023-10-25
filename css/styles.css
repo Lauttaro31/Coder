@@ -804,9 +804,6 @@ body {
   padding: 2rem;
   gap: 1rem;
 }
-.informacion .div-1 {
-  height: 5rem;
-}
 .informacion .div-1 h3 {
   font-family: "Montserrat", sans-serif;
 }
@@ -819,9 +816,6 @@ body {
   border-radius: 0 10px 0 10px;
   margin: 0 5px 5px 5px;
 }
-.informacion .div-2 {
-  height: 5rem;
-}
 .informacion .div-2 h3 {
   font-family: "Montserrat", sans-serif;
 }
@@ -833,9 +827,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: black;
-}
-.informacion .div-3 {
-  height: 5rem;
 }
 .informacion .div-3 h3 {
   font-family: "Montserrat", sans-serif;
@@ -874,6 +865,9 @@ body {
   justify-content: space-around;
   background-color: black;
   margin: calc(1rem + 10px);
+}
+.formulario .titulo {
+  padding: 0 2rem;
 }
 .formulario p {
   font-family: "Reboto", sans-serif;
