@@ -13,7 +13,7 @@ main{
         flex-direction: row;
         gap: 1rem;
         .ind-img{
-            height: 70vh;
+            height: 30rem;
             img{
                 height: 100%;
                 @include shadow-border;
@@ -87,12 +87,33 @@ main{
 }
 @media (max-width: 992px){
     main{
+        .h2{
+            margin-bottom: 1rem;
+        }
         .ind{
             flex-direction: column;
             .ind-img{
+                display: flex;
+                justify-content: center;
                 img{
-                    height: 50%;
+                    height: 100%;
                 }
+            }
+            .ind-texto{
+                text-align: center;
+                .btns{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 592px){
+    main{
+        .ind{
+            .ind-img{
+                height: 24rem;
             }
         }
     }

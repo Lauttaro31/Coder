@@ -181,7 +181,7 @@ body {
     height: 70vh;
     left: -5px;
     padding: 30px;
-    transform: translatey(-120%);
+    transform: translatey(-150%);
     border-radius: 0 0 3rem 3rem;
   }
   .header nav .main-menu li {
@@ -211,7 +211,7 @@ body {
     height: 5rem;
   }
   .header .logo {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .header nav .navLinks {
     display: none;
@@ -290,6 +290,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: black;
+  margin: 1rem 2rem 0 2rem;
   border-radius: 0 2rem;
 }
 .main .info-cont .info h1 {
@@ -329,6 +330,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .main h2 {
+    margin: 1rem;
+  }
   .main .carousel .carousel-inner {
     height: 20rem;
   }
@@ -337,13 +341,13 @@ body {
     bottom: 10rem;
   }
   .main .carousel .carousel-inner .d-img {
-    margin: 0 18%;
+    margin: 0 14%;
     height: 17rem;
   }
   .main .carousel .btn-resp {
     position: relative;
     display: inline;
-    left: 4rem;
+    left: 3.4rem;
     bottom: 1rem;
     text-decoration: none;
   }
@@ -481,6 +485,7 @@ footer .pago-envio-links .links-poli .poli a img {
   footer .pago-envio-links .links-poli {
     width: 100%;
     flex-direction: column;
+    padding: 0 1rem;
   }
   footer .pago-envio-links .links-poli .links {
     justify-content: center;
@@ -490,8 +495,14 @@ footer .pago-envio-links .links-poli .poli a img {
   footer .pago-envio-links .links-poli .links h3 {
     margin-right: 0;
     margin-bottom: 5px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  footer .pago-envio-links .links-poli .links .links-redes {
+    margin-bottom: 10px;
   }
   footer .pago-envio-links .links-poli .poli ul li {
+    text-align: center;
     margin: 0 1rem;
   }
 }
@@ -665,7 +676,7 @@ body {
   box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   display: flex;
   flex-direction: column;
-  margin: 2rem 2rem;
+  margin: 0 2rem;
   background-color: white;
   padding: 1rem;
 }
@@ -921,6 +932,19 @@ body {
 }
 
 @media (max-width: 1080px) {
+  .formulario .titulo {
+    text-align: center;
+  }
+  .formulario .titulo h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .formulario .titulo img {
+    width: 40px;
+  }
+  .formulario p {
+    font-size: 20px;
+  }
   .formulario .form {
     flex-direction: column;
   }
@@ -957,7 +981,7 @@ main .ind {
   gap: 1rem;
 }
 main .ind .ind-img {
-  height: 70vh;
+  height: 30rem;
 }
 main .ind .ind-img img {
   height: 100%;
@@ -1032,11 +1056,30 @@ main .ind .ind-texto .btns .carro img {
 }
 
 @media (max-width: 992px) {
+  main .h2 {
+    margin-bottom: 1rem;
+  }
   main .ind {
     flex-direction: column;
   }
+  main .ind .ind-img {
+    display: flex;
+    justify-content: center;
+  }
   main .ind .ind-img img {
-    height: 50%;
+    height: 100%;
+  }
+  main .ind .ind-texto {
+    text-align: center;
+  }
+  main .ind .ind-texto .btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 592px) {
+  main .ind .ind-img {
+    height: 24rem;
   }
 }
 
