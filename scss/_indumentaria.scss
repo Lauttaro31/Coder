@@ -1,4 +1,4 @@
-@import "base";
+@import "mixin";
 
 main{
     .h2{
@@ -26,12 +26,11 @@ main{
             justify-content: center;
             align-items: center;
             background-color: black;
-            padding: 2rem;
             h3{
                 @include encabezado;
                 letter-spacing: 3px;
                 color: white;
-                margin-bottom: 1rem;
+                margin: 2rem 1rem 1rem;
             }
             p{
                 @include parrafos;
@@ -39,12 +38,13 @@ main{
                 letter-spacing: 1.5px;
                 text-align: center;
                 color: white;
-        
+                margin: 0 1rem 1rem;
             }
             .btns{
                 display: flex;
                 flex-direction: row;
                 gap: 1rem;
+                margin: 0 1rem 2rem;
                 .btn{
                     border-radius: 0 5px 0 5px;
                     @include parrafos;
@@ -81,39 +81,6 @@ main{
                         width: 100%;
                     }
                 }
-            }
-        }
-    }
-}
-@media (max-width: 992px){
-    main{
-        .h2{
-            margin-bottom: 1rem;
-        }
-        .ind{
-            flex-direction: column;
-            .ind-img{
-                display: flex;
-                justify-content: center;
-                img{
-                    height: 100%;
-                }
-            }
-            .ind-texto{
-                text-align: center;
-                .btns{
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 592px){
-    main{
-        .ind{
-            .ind-img{
-                height: 24rem;
             }
         }
     }

@@ -1,75 +1,67 @@
-@import "base";
-.informacion{
-    h2{
-        @include shadow-border;
-        @include titulo;
-        text-align: center
-    }
-    .product{
-        @include shadow-border;
-        display: flex;
-        flex-direction: column;
-        margin: 2rem;
-        background-color: white;
-        padding: 2rem;
-        gap: 1rem
-    }
-    .div-1{
-        h3{
-            @include encabezado;
-        }
-        p{
-            @include parrafos;
-            margin: 0;
-        }
-        img{
-            height: 2rem;
-            border-radius: 0 10px 0 10px;
-            margin: 0 5px 5px 5px
-        }
-    }
-    .div-2{
-        h3{
-            @include encabezado;
-        }
-        p{
-            @include parrafos;
-            margin: 0;
-        }
-        a{
-            text-decoration: none;
-            font-weight: bold;
-            color: black;
-        }
-    }
-    .div-3{
-        h3{
-            @include encabezado;
-        }
-        p{
-            @include parrafos;
-            margin: 0;
-        }
-    }
-    .ilustracion{
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0;
-        .product-img{
-            width: 5%;
-            margin: 0 1rem;
-        }
-    }
-}
-@media (max-width: 656px){
+@import "mixin";
+.main-envios{
     .informacion{
+        h2{
+            @include shadow-border;
+            @include titulo;
+            text-align: center
+        }
+        .product{
+            @include shadow-border;
+            display: flex;
+            flex-direction: column;
+            margin: 0 2rem;
+            background-color: white;
+            padding: 1.4rem;
+            gap: 1rem
+        }
+        .div-1{
+            h3{
+                @include encabezado;
+            }
+            p{
+                @include parrafos;
+                margin: 0;
+            }
+            img{
+                height: 2rem;
+                border-radius: 0 10px 0 10px;
+                margin: 0 5px 5px 5px
+            }
+        }
+        .div-2{
+            h3{
+                @include encabezado;
+            }
+            p{
+                @include parrafos;
+                margin: 0;
+            }
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+            }
+        }
+        .div-3{
+            h3{
+                @include encabezado;
+            }
+            p{
+                @include parrafos;
+                margin: 0;
+            }
+        }
         .ilustracion{
-            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
             .product-img{
-                width: 15%;
+                width: 3rem;
+                margin: 0 1rem;
             }
         }
     }
