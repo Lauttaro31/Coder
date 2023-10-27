@@ -1048,6 +1048,7 @@ main .ind .ind-texto .btns .carro img {
   }
   main .ind .ind-texto .btns h4 {
     font-size: 15px;
+    margin: 4px 0 0 0;
   }
   main .ind .ind-texto .btns h4:nth-of-type(3) {
     margin-top: 10px;
@@ -1058,6 +1059,7 @@ main .ind .ind-texto .btns .carro img {
     height: 20rem;
   }
   main .ind .ind-texto .btns h4 {
+    margin: 4px 0 0 0;
     font-size: 14px;
   }
   main .ind .ind-texto .btns h4:nth-of-type(3) {
