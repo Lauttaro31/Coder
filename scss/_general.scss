@@ -135,7 +135,6 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         .pago{
-            height: 6rem;
             margin: 1rem;
             padding: 1rem;
             background-color: rgba(0, 0, 0, 0.842);
@@ -159,7 +158,6 @@ footer{
             }
         }
         .envio{
-            height: 6rem;
             margin: 1rem;
             padding: 1rem;
             background-color: rgba(0, 0, 0, 0.842);
@@ -220,7 +218,7 @@ footer{
                 @include encabezado;
                 font-weight: 600;
                 justify-content: space-evenly;
-                margin: 1rem 0;
+                margin: 1rem;
                 padding: 0;
                 }
                 .text{

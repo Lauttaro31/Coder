@@ -160,7 +160,6 @@ footer .pago-envio-links {
   justify-content: space-around;
 }
 footer .pago-envio-links .pago {
-  height: 6rem;
   margin: 1rem;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.842);
@@ -184,7 +183,6 @@ footer .pago-envio-links .pago img {
   border-radius: 0 10px 0 10px;
 }
 footer .pago-envio-links .envio {
-  height: 6rem;
   margin: 1rem;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.842);
@@ -247,7 +245,7 @@ footer .pago-envio-links .links-poli .poli ul {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   justify-content: space-evenly;
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 0;
 }
 footer .pago-envio-links .links-poli .poli .text {
@@ -325,7 +323,7 @@ footer .pago-envio-links .links-poli .poli a img {
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
   border-radius: 0 2rem;
   box-shadow: 0 2px 2px 0 rgb(75, 75, 75);
 }
@@ -514,14 +512,14 @@ footer .pago-envio-links .links-poli .poli a img {
   box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   width: auto;
   height: 300px;
-  margin-left: 15px;
+  margin: 0 15px;
 }
 .info-sublimados .productos .art-2 img {
   border-radius: 0 2rem;
   box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   width: auto;
   height: 300px;
-  margin-left: 15px;
+  margin: 0 15px;
 }
 .info-sublimados .productos .art-2 p {
   font-family: "Reboto", sans-serif;
@@ -536,7 +534,7 @@ footer .pago-envio-links .links-poli .poli a img {
   box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
   width: auto;
   height: 300px;
-  margin-left: 15px;
+  margin: 0 15px;
 }
 .info-sublimados .productos .art-3 p {
   font-family: "Reboto", sans-serif;
@@ -547,52 +545,6 @@ footer .pago-envio-links .links-poli .poli a img {
   color: black;
 }
 
-@media (max-width: 1300px) {
-  .info-sublimados {
-    padding: 0;
-  }
-  .info-sublimados .productos {
-    margin: 0;
-  }
-  .info-sublimados .productos .subproducto .imgs-1 {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-}
-@media (max-width: 1085px) {
-  .info-sublimados {
-    padding: 0;
-  }
-  .info-sublimados .productos {
-    margin: 0;
-  }
-  .info-sublimados .productos .subproducto .imgs-1 {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .info-sublimados .productos .subproducto .imgs-1 img {
-    height: 200px;
-  }
-}
-@media (max-width: 576px) {
-  .info-sublimados {
-    padding: 0;
-  }
-  .info-sublimados .productos {
-    margin: 0;
-  }
-  .info-sublimados .productos .subproducto p {
-    font-size: 15px;
-    margin: 0 1.4rem;
-  }
-  .info-sublimados .productos .subproducto .imgs-1 {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .info-sublimados .productos .subproducto .imgs-1 img {
-    height: 150px;
-  }
-}
 .main-envios .informacion h2 {
   border-radius: 0 2rem;
   box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.3);
@@ -785,7 +737,7 @@ main .ind .ind-texto .btns {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  margin: 0 1rem 2rem;
+  margin: 0 0 2rem;
 }
 main .ind .ind-texto .btns .btn {
   border-radius: 0 5px 0 5px;
@@ -852,14 +804,12 @@ main .ind .ind-texto .btns .carro img {
     width: 100vw;
     height: 70vh;
     left: -5px;
-    padding: 30px;
+    padding: 0;
     transform: translatey(-150%);
     border-radius: 0 0 3rem 3rem;
   }
   .header nav .main-menu li {
-    margin: 1rem;
     justify-content: center;
-    padding: 1.2rem;
   }
   .header nav .main-menu li a {
     font-size: 1.3rem;
@@ -890,6 +840,26 @@ main .ind .ind-texto .btns .carro img {
   }
   .header nav .busqueda {
     display: none;
+  }
+}
+@media (max-width: 356px) {
+  .header {
+    justify-content: start;
+    align-items: center;
+    padding: 14px;
+    height: 5rem;
+  }
+  .header .logo {
+    margin-left: 0px;
+  }
+  .header nav .navLinks {
+    display: none;
+  }
+  .header nav .busqueda {
+    display: none;
+  }
+  .header .toggle-menu {
+    margin-right: 1rem;
   }
 }
 @media (max-width: 992px) {
@@ -926,15 +896,47 @@ main .ind .ind-texto .btns .carro img {
     text-decoration: none;
   }
 }
+@media (max-width: 356px) {
+  .main-index {
+    margin: 1rem;
+  }
+  .main-index h2 {
+    margin: 1rem;
+  }
+  .main-index .info-cont {
+    margin: 1rem 0 0 0;
+  }
+  .main-index .info-cont .info h1 {
+    margin: 1rem 1rem 0 1rem;
+  }
+  .main-index .info-cont .info-2 {
+    margin: 0 0rem 0rem 0rem;
+  }
+}
 @media (max-width: 1100px) {
   footer .pago-envio-links {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+  }
+  footer .pago-envio-links .links-poli {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  footer .pago-envio-links .links-poli .links {
+    flex-direction: column;
+  }
+  footer .pago-envio-links .links-poli .links h3 {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  footer .pago-envio-links .links-poli .links .links-redes {
+    justify-content: center;
   }
 }
 @media (max-width: 552px) {
   footer .pago-envio-links {
-    flex-direction: column;
     align-items: center;
   }
   footer .pago-envio-links .pago img {
@@ -962,6 +964,9 @@ main .ind .ind-texto .btns .carro img {
   footer .pago-envio-links .links-poli .links .links-redes {
     margin-bottom: 10px;
   }
+  footer .pago-envio-links .links-poli .poli ul {
+    flex-wrap: wrap;
+  }
   footer .pago-envio-links .links-poli .poli ul li {
     text-align: center;
     margin: 0 1rem;
@@ -985,12 +990,31 @@ main .ind .ind-texto .btns .carro img {
     flex-direction: column;
   }
 }
+@media (max-width: 356px) {
+  .main-contacto .formulario {
+    margin: 1rem;
+  }
+}
 @media (max-width: 656px) {
   .main-envios .informacion .ilustracion {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 356px) {
+  .main-envios .informacion h2 {
+    margin: 1rem;
+  }
+  .main-envios .informacion .ilustracion {
+    flex-wrap: wrap;
+  }
+  .main-envios .informacion .product {
+    margin: 1rem;
+  }
+}
 @media (max-width: 992px) {
+  .main-productos .articulos h2 {
+    margin: 1rem;
+  }
   .main-productos .articulos .cards {
     gap: 0.7rem;
   }
@@ -1018,6 +1042,93 @@ main .ind .ind-texto .btns .carro img {
   }
   .main-productos .articulos .cards .card .compra .carro {
     width: 56px;
+  }
+}
+@media (max-width: 356px) {
+  .main-productos .articulos {
+    margin: 0;
+  }
+  .main-productos .articulos .cards {
+    gap: 0.4rem;
+  }
+  .main-productos .articulos .cards .card {
+    width: 9rem;
+  }
+  .main-productos .articulos .cards .card .card-img-top {
+    width: 9rem;
+    margin: 0;
+    border-radius: 0 2rem;
+    padding: 0 8px;
+  }
+  .main-productos .articulos .cards .card .card-body .card-title {
+    color: black;
+    text-align: center;
+    font-size: 14px;
+  }
+  .main-productos .articulos .cards .card .card-body .card-text {
+    font-size: 14px;
+  }
+  .main-productos .articulos .cards .card a {
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+    margin: 10px;
+  }
+  .main-productos .articulos .cards .card .compra {
+    width: 90%;
+  }
+  .main-productos .articulos .cards .card .compra .carro {
+    width: 56px;
+  }
+}
+@media (max-width: 1300px) {
+  .info-sublimados {
+    padding: 0;
+  }
+  .info-sublimados .productos {
+    margin: 0;
+  }
+  .info-sublimados .productos .subproducto .imgs-1 {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+@media (max-width: 1085px) {
+  .info-sublimados {
+    padding: 0;
+  }
+  .info-sublimados .productos {
+    margin: 0;
+  }
+  .info-sublimados .productos .subproducto .imgs-1 {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .info-sublimados .productos .subproducto .imgs-1 img {
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .title-2 {
+    margin: 1rem;
+  }
+  .info-sublimados {
+    padding: 0;
+    margin: 0 1rem;
+  }
+  .info-sublimados .productos {
+    margin: 0;
+  }
+  .info-sublimados .productos .subproducto p {
+    font-size: 15px;
+    margin: 0 1.4rem;
+  }
+  .info-sublimados .productos .subproducto .imgs-1 {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .info-sublimados .productos .subproducto .imgs-1 img {
+    height: 125px;
   }
 }
 @media (max-width: 992px) {
@@ -1049,9 +1160,6 @@ main .ind .ind-texto .btns .carro img {
   main .ind .ind-texto .btns h4 {
     font-size: 15px;
     margin: 4px 0 0 0;
-  }
-  main .ind .ind-texto .btns h4:nth-of-type(3) {
-    margin-top: 10px;
   }
 }
 @media (max-width: 490px) {
