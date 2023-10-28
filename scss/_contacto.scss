@@ -7,9 +7,7 @@
         justify-content: space-around;
         background-color: black;
         margin: calc(1rem + 10px);
-        .titulo{
-            padding: 0 2rem;
-        }
+        padding: 0 1rem;
         p{
             @include parrafos;
             color: white;
@@ -17,7 +15,6 @@
             font-weight: 400;
         }
         div{
-            background-color: black;
             border-radius: 2rem;
             height: auto;
             align-items: center;
@@ -40,6 +37,7 @@
             .form-control{
                 margin: 0 0 5px;
                 @include parrafos;
+                max-height: 200px;
             }
             .mb-3 textarea{
                 height: 85px;
@@ -50,7 +48,6 @@
                 font-weight: 500;
                 margin: 3px 0 3px 0;
                 color: white;
-                width: 16rem;
             }
             .btn{
                 margin: 1rem;

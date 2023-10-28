@@ -623,9 +623,7 @@ footer .pago-envio-links .links-poli .poli a img {
   justify-content: space-around;
   background-color: black;
   margin: calc(1rem + 10px);
-}
-.main-contacto .formulario .titulo {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .main-contacto .formulario p {
   font-family: "Reboto", sans-serif;
@@ -635,7 +633,6 @@ footer .pago-envio-links .links-poli .poli a img {
   font-weight: 400;
 }
 .main-contacto .formulario div {
-  background-color: black;
   border-radius: 2rem;
   height: auto;
   align-items: center;
@@ -660,6 +657,7 @@ footer .pago-envio-links .links-poli .poli a img {
   margin: 0 0 5px;
   font-family: "Reboto", sans-serif;
   font-size: 18px;
+  max-height: 200px;
 }
 .main-contacto .formulario .form .mb-3 textarea {
   height: 85px;
@@ -672,7 +670,6 @@ footer .pago-envio-links .links-poli .poli a img {
   font-weight: 500;
   margin: 3px 0 3px 0;
   color: white;
-  width: 16rem;
 }
 .main-contacto .formulario .form .btn {
   margin: 1rem;
@@ -862,6 +859,11 @@ main .ind .ind-texto .btns .carro img {
     margin-right: 1rem;
   }
 }
+@media (max-width: 312px) {
+  .header .carrito {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .main-index .carousel .carousel-inner .carousel-caption {
     position: absolute;
@@ -913,6 +915,29 @@ main .ind .ind-texto .btns .carro img {
     margin: 0 0rem 0rem 0rem;
   }
 }
+@media (max-width: 280px) {
+  .main-index h2 {
+    margin: 1rem;
+  }
+  .main-index .carousel .carousel-inner {
+    height: 20rem;
+  }
+  .main-index .carousel .carousel-inner .carousel-caption .btn-main {
+    position: sticky;
+    bottom: 10rem;
+  }
+  .main-index .carousel .carousel-inner .d-img {
+    margin: 8% 15% 0;
+    height: 15rem;
+  }
+  .main-index .carousel .btn-resp {
+    position: relative;
+    display: inline;
+    left: 2.7rem;
+    bottom: 1rem;
+    text-decoration: none;
+  }
+}
 @media (max-width: 1100px) {
   footer .pago-envio-links {
     flex-wrap: wrap;
@@ -941,6 +966,12 @@ main .ind .ind-texto .btns .carro img {
   }
   footer .pago-envio-links .pago img {
     height: 1.8rem;
+  }
+  footer .pago-envio-links .pago h4 {
+    text-align: center;
+  }
+  footer .pago-envio-links .envio h4 {
+    text-align: center;
   }
   footer .pago-envio-links .envio img {
     height: 1.8rem;
@@ -994,6 +1025,9 @@ main .ind .ind-texto .btns .carro img {
   .main-contacto .formulario {
     margin: 1rem;
   }
+  .main-contacto .formulario .form {
+    flex-direction: column;
+  }
 }
 @media (max-width: 656px) {
   .main-envios .informacion .ilustracion {
@@ -1044,7 +1078,7 @@ main .ind .ind-texto .btns .carro img {
     width: 56px;
   }
 }
-@media (max-width: 356px) {
+@media (max-width: 370px) {
   .main-productos .articulos {
     margin: 0;
   }
@@ -1076,6 +1110,44 @@ main .ind .ind-texto .btns .carro img {
   }
   .main-productos .articulos .cards .card .compra {
     width: 90%;
+  }
+  .main-productos .articulos .cards .card .compra .carro {
+    width: 56px;
+  }
+}
+@media (max-width: 280px) {
+  .main-productos .articulos {
+    margin: 0;
+  }
+  .main-productos .articulos .cards {
+    gap: 0.6rem;
+  }
+  .main-productos .articulos .cards .card {
+    width: 8rem;
+  }
+  .main-productos .articulos .cards .card .card-img-top {
+    width: 8rem;
+    margin: 0;
+    border-radius: 0 2rem;
+    padding: 0 8px;
+  }
+  .main-productos .articulos .cards .card .card-body .card-title {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+  }
+  .main-productos .articulos .cards .card .card-body .card-text {
+    font-size: 12px;
+  }
+  .main-productos .articulos .cards .card a {
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+    margin: 10px;
+  }
+  .main-productos .articulos .cards .card .compra {
+    width: 100%;
+    margin-right: 5px;
   }
   .main-productos .articulos .cards .card .compra .carro {
     width: 56px;
