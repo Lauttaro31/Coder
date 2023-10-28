@@ -259,6 +259,31 @@ footer .pago-envio-links .links-poli .poli a img {
   width: 100%;
 }
 
+.main-error section {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-error section .error-titulo {
+  display: flex;
+  justify-content: center;
+}
+.main-error section .error-titulo .error-t {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10rem;
+  text-align: center;
+}
+.main-error section .error-parrafo {
+  display: flex;
+  justify-content: center;
+}
+.main-error section .error-parrafo .error-p {
+  font-family: "Reboto", sans-serif;
+  font-size: 18px;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .main-index {
   margin: calc(1rem + 10px);
 }
