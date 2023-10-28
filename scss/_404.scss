@@ -1,0 +1,25 @@
+.main-error{
+    section{
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        .error-titulo{
+            display: flex;
+            justify-content: center;
+            .error-t{
+                @include encabezado;
+                font-size: 10rem;
+                text-align: center;
+            }
+        }
+        .error-parrafo{
+            display: flex;
+            justify-content: center;
+            .error-p{
+                @include parrafos;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+}
