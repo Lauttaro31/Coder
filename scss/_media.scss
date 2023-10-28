@@ -508,6 +508,39 @@
         }
     }
 }
+//Media 404
+@media (max-width: 600px){
+    .main-error{
+        section{
+            .error-titulo{
+                .error-t{
+                    font-size: 6rem;
+                }
+            }
+            .error-parrafo{
+                .error-p{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 362px){
+    .main-error{
+        section{
+            .error-titulo{
+                .error-t{
+                    font-size: 3rem;
+                }
+            }
+            .error-parrafo{
+                .error-p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
 //Media Indumentaria
 @media (max-width: 992px){
     main{

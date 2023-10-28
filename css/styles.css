@@ -1228,6 +1228,22 @@ main .ind .ind-texto .btns .carro img {
     height: 125px;
   }
 }
+@media (max-width: 600px) {
+  .main-error section .error-titulo .error-t {
+    font-size: 6rem;
+  }
+  .main-error section .error-parrafo .error-p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 362px) {
+  .main-error section .error-titulo .error-t {
+    font-size: 3rem;
+  }
+  .main-error section .error-parrafo .error-p {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 992px) {
   main .h2 {
     margin-bottom: 1rem;
